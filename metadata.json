@@ -1,0 +1,6 @@
+{
+  "name": "KYUSI-LIGTAS: Smart Evacuation & Flood-Surge System",
+  "description": "An IoT-enabled flood early warning and shelter management platform enhancing barangay-level mandatory evacuation protocols in Quezon City.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

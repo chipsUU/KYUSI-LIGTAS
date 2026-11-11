@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="100" fill="url(#bg)" />
+
+  <!-- Outer Tech Hexagon / Circle Accent Ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#334155" stroke-width="6" stroke-dasharray="14 10" opacity="0.6" />
+  <circle cx="256" cy="256" r="185" fill="none" stroke="#F59E0B" stroke-width="3" opacity="0.4" />
+
+  <!-- Shield Base -->
+  <path d="M256 90 L390 148 C390 270 332 370 256 414 C180 370 122 270 122 148 Z" fill="url(#shieldGrad)" />
+  
+  <!-- Shield Inner Border -->
+  <path d="M256 112 L368 162 C368 262 320 348 256 386 C192 348 144 262 144 162 Z" fill="#0F172A" />
+
+  <!-- River Flood Water Wave Crests -->
+  <path d="M176 250 Q216 220 256 250 T336 250 L336 270 Q296 240 256 270 T176 270 Z" fill="#38BDF8" opacity="0.9" />
+  <path d="M176 280 Q216 250 256 280 T336 280 L336 300 Q296 270 256 300 T176 300 Z" fill="#0284C7" opacity="0.75" />
+
+  <!-- Warning Radio Beacon / IoT Pulse -->
+  <circle cx="256" cy="180" r="22" fill="#F59E0B" />
+  <circle cx="256" cy="180" r="10" fill="#FFFFFF" />
+
+  <!-- Radio Waves -->
+  <path d="M220 180 A36 36 0 0 1 292 180" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" />
+  <path d="M202 180 A54 54 0 0 1 310 180" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" opacity="0.7" />
+  <path d="M184 180 A72 72 0 0 1 328 180" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" opacity="0.4" />
+
+  <!-- Quezon City Monogram Label -->
+  <text x="256" y="348" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28" fill="#F8FAFC" text-anchor="middle" letter-spacing="4">KYUSI-LIGTAS</text>
+  <text x="256" y="372" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14" fill="#10B981" text-anchor="middle" letter-spacing="2">SMART EVACUATION</text>
+</svg>

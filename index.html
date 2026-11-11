@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="KYUSI-LIGTAS" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>KYUSI-LIGTAS: Smart Evacuation & Flood-Surge System | Quezon City</title>
+    <meta name="description" content="An IoT-enabled flood early warning and shelter management platform enhancing barangay-level mandatory evacuation protocols in Quezon City." />
+    <meta property="og:title" content="KYUSI-LIGTAS: Smart Evacuation & Flood-Surge System | Quezon City" />
+    <meta property="og:description" content="An IoT-enabled flood early warning and shelter management platform enhancing barangay-level mandatory evacuation protocols in Quezon City." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Firebase Web SDK v10 (CDN) -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import { 
+        getAuth, 
+        createUserWithEmailAndPassword, 
+        signInWithEmailAndPassword, 
+        sendEmailVerification, 
+        signOut, 
+        onAuthStateChanged 
+      } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+      window.FirebaseCDN = {
+        initializeApp,
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        sendEmailVerification,
+        signOut,
+        onAuthStateChanged
+      };
+    </script>
+    <!-- Supabase JS Library (v2 CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Standard QR Code Library (qrcode.js CDN for ISO-standard QR code generation) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body class="bg-[#FF4D00] text-black font-sans antialiased selection:bg-black selection:text-[#FF4D00]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
